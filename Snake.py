@@ -66,3 +66,8 @@ class Snake:
         if self.turtles[0].heading() != 180:
             self.turtles[0].setheading(0)
 
+    def reset(self):
+        for turtle in self.turtles:
+            turtle.goto(1000, 1000)
+        self.turtles.clear()
+        self.create_snake()
