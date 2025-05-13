@@ -32,7 +32,7 @@ while game_on:
     if snake.turtles[0].distance(food) < 15:
         snake.tail()
         food.refresh()
-        scoreboard.update_score()
+        scoreboard.increase_score()
 
     #detect collision with wall
     if snake.turtles[0].xcor() > 280 or snake.turtles[0].xcor() < -280 or snake.turtles[0].ycor() > 280 or snake.turtles[0].ycor() < -280:
